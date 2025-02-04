@@ -13,7 +13,13 @@ uv pip install -e .
 
 ## Environment Setup
 
-Set your AQICN API key as an environment variable:
+Create a `.env` file in the project root (you can copy from `.env.example`):
+```bash
+# .env
+AQICN_API_KEY=your_api_key_here
+```
+
+Alternatively, you can set the environment variable directly:
 ```bash
 # Linux/macOS
 export AQICN_API_KEY=your_api_key_here
@@ -35,11 +41,7 @@ mcp dev aqicn_server.py
 Once your server is ready, install it in Claude Desktop:
 
 ```bash
-# Install with environment variable
-mcp install aqicn_server.py -v AQICN_API_KEY=your_api_key_here
-
-# Or use an .env file
-mcp install aqicn_server.py -f .env
+mcp install aqicn_server.py
 ```
 
 ### Direct Execution
@@ -47,8 +49,6 @@ For testing or custom deployments:
 
 ```bash
 python aqicn_server.py
-# or
-mcp run aqicn_server.py
 ```
 
 ## Available Tools

@@ -3,11 +3,15 @@ from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel
 import httpx
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configuration
 AQICN_API_KEY = os.environ.get("AQICN_API_KEY")
 if not AQICN_API_KEY:
-    raise ValueError("AQICN_API_KEY environment variable is not set")
+    raise ValueError("AQICN_API_KEY environment variable is not set. Create a .env file or set it in your environment.")
 
 AQICN_BASE_URL = "https://api.waqi.info"
 

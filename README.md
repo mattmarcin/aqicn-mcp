@@ -1,8 +1,19 @@
 # AQICN MCP Server
+[![smithery badge](https://smithery.ai/badge/@mattmarcin/aqicn-mcp)](https://smithery.ai/server/@mattmarcin/aqicn-mcp)
 
 This is a Model Context Protocol (MCP) server that provides air quality data tools from the World Air Quality Index (AQICN) project. It allows LLMs to fetch real-time air quality data for cities and coordinates worldwide.
 
 ## Installation
+
+### Installing via Smithery
+
+To install AQICN MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@mattmarcin/aqicn-mcp):
+
+```bash
+npx -y @smithery/cli install @mattmarcin/aqicn-mcp --client claude
+```
+
+### Installing via recommended uv (manual)
 
 We recommend using [uv](https://docs.astral.sh/uv/) to manage your Python environment:
 

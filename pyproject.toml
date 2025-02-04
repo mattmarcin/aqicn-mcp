@@ -1,0 +1,12 @@
+[project]
+name = "aqicn-mcp"
+version = "0.1.0"
+description = "MCP server for fetching air quality data from AQICN"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]",
+    "httpx",
+    "pydantic>=2.0.0"
+]
+
